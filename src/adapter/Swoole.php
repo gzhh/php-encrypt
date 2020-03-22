@@ -10,6 +10,11 @@ class Swoole implements AdapterInterface
 
     public function __construct($config)
     {
+        $res = ;
+        if (!extension_loaded('swoole')) {
+            exit("Swoole extension need installed.\n");
+        }
+        exit("Swoole Compiler doc: https://wiki.swoole.com/wiki/index/prid-16.\n");
         // TODO
         // optimization
         $encryptorClassName = Compiler::class;
